@@ -1,18 +1,28 @@
+.navbar .nav-collapse.collapse ul.tpnav>li{
+    border-right: 2px solid #fff;
+    padding:0 25px;
+}
+.navbar-inverse .brand, .navbar-inverse .nav > li > a{
+    color:#fff;
+}
 .jumbotron {
     color: #fff;
     text-shadow: 0 1px 3px rgba(0,0,0,.4), 0 0 30px rgba(0,0,0,.075);
     background: #378503;
-    background: -moz-linear-gradient(45deg, #1F221F 0%, #0CA818 100%);
-    background: -webkit-linear-gradient(45deg, #1F221F 0%,#0CA818 100%);
-    background: -o-linear-gradient(45deg, #1F221F 0%,#0CA818 100%);
-    background: -ms-linear-gradient(45deg, #1F221F 0%,#0CA818 100%);
-    background: linear-gradient(45deg, #1F221F 0%,#0CA818 100%);
+    background: -moz-linear-gradient(45deg, #311b1f 0%, #a85e27 100%);
+    background: -webkit-linear-gradient(45deg, #311b1f 0%, #a85e27 100%);
+    background: -o-linear-gradient(45deg, #311b1f 0%, #a85e27 100%);
+    background: -ms-linear-gradient(45deg, #311b1f 0%, #a85e27 100%);
+    background: linear-gradient(45deg, #311b1f 0%, #a85e27 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1F221F', endColorstr='#0CA818',GradientType=1 );
     -webkit-box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
     -moz-box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
     box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
 }
 
+.tpnav .tpActive{
+    background: green;
+}
 
 .onethink.pagination {
   margin: 20px 0;
@@ -166,4 +176,29 @@ form .ke-container{
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+ul.childnav{
+    position: absolute;
+    width:100px;
+    top:40px;
+    background: rgba(0,255,0,0.2);
+    z-index: 999;
+}
+ul.childnav>li{
+    clear:both;
+    text-align:center;
+    line-height:20px;
+    font-size:14px;
+    list-style:none;
+}
+ ul.childnav>li>a{
+    color:#fff;
+ }
+
+ .tpblock{
+     display:block;
+ }
+.tpnone{
+    display: none;
 }

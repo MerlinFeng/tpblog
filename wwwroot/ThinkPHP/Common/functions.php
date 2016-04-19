@@ -1759,3 +1759,11 @@ function in_array_case($value, $array)
 {
     return in_array(strtolower($value), array_map('strtolower', $array));
 }
+
+function dd($param)
+{
+    echo "<pre>";
+    print_r($param);
+    echo "</pre>";
+    return false;
+}

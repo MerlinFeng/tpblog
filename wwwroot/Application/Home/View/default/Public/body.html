@@ -20,5 +20,10 @@
         $(window).resize(function(){
             $("#main-container").css("min-height", $(window).height() - 343);
         }).resize();
+
+        $(".nav-collapse ul.tpnav li").click(function(){
+            $this.addClass('tpActive').siblings().removeClass('tpActive');
+        })
     })
+
 </script>

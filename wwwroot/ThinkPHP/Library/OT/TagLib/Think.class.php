@@ -24,6 +24,9 @@ class Think extends TagLib{
         'datalist'  =>  array('attr'=>'name,field,limit,order,where,table,join,having,group,result,count,key,mod,gc','level'=>3),
         );
 
+
+
+
     /* 导航列表 */
     public function _nav($tag, $content){
         $field  = empty($tag['field']) ? 'true' : $tag['field'];

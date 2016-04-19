@@ -1,14 +1,9 @@
 <?php
-// +----------------------------------------------------------------------
-// | OneThink [ WE CAN DO IT JUST THINK IT ]
-// +----------------------------------------------------------------------
-// | Copyright (c) 2013 http://www.onethink.cn All rights reserved.
-// +----------------------------------------------------------------------
-// | Author: 麦当苗儿 <zuojiazi@vip.qq.com> <http://www.zjzit.cn>
-// +----------------------------------------------------------------------
+
 
 namespace Home\Controller;
 use Think\Controller;
+use Home\Constants\CommonEnum;
 
 /**
  * 前台公共控制器
@@ -37,5 +32,9 @@ class HomeController extends Controller {
 		/* 用户登录检测 */
 		is_login() || $this->error('您还没有登录，请先登录！', U('User/login'));
 	}
+
+    public function topMenu(){
+
+    }
 
 }

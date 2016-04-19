@@ -1,11 +1,5 @@
 <?php
-// +----------------------------------------------------------------------
-// | OneThink [ WE CAN DO IT JUST THINK IT ]
-// +----------------------------------------------------------------------
-// | Copyright (c) 2013 http://www.onethink.cn All rights reserved.
-// +----------------------------------------------------------------------
-// | Author: 麦当苗儿 <zuojiazi@vip.qq.com> <http://www.zjzit.cn>
-// +----------------------------------------------------------------------
+
 
 /**
  * 前台公共库文件
@@ -67,4 +61,18 @@ function get_nav_url($url){
             break;
     }
     return $url;
+}
+
+function get_nav_left_distace($i){
+    switch ($i){
+        case 2:
+            return '99px';
+            break;
+        case 3:
+            return '234px';
+            break;
+        case 4:
+            return '365px';
+        break;
+    }
 }
