@@ -15,10 +15,10 @@ define('APP_DEBUG', true );
  */
 define ( 'APP_PATH', './Application/' );
 
-if(!is_file(APP_PATH . 'User/Conf/config.php')){
+/*if(!is_file(APP_PATH . 'User/Conf/config.php')){
 	header('Location: ./install.php');
 	exit;
-}
+}*/
 
 /**
  * 缓存目录设置

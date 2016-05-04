@@ -1,16 +1,24 @@
 <extend name="Base/common"/>
 
 <block name="header">
-	<header class="jumbotron subhead" id="overview">
-		<div class="container">
-			<h2>梦想的世界，优雅的程序！</h2>
-			<p class="lead"></p>
+	<div id="particles" class="container-fluid banner">
+		<div id="intro" class="soso">
+			<div class="clearfix">
+				<div class="mark"><img src="/Public/Home/images/logo32.png" alt=""> MerlinBlog </div>
+				<p class="mark_info">——梦想的世界，优雅的程序。</p>
+			</div>
+			<div class="clearfix">
+				<input type="text" placeholder="搜索.." id="searchtxt" class="bantxt" style="transition: all 1.5s ease 0s;">
+				<button id="seobut" type="button" class="btn banbutt"><i class="fa fa-search"></i>
+				</button>
+			</div>
 		</div>
-	</header>
+
+	</div>
 </block>
 
 <block name="body">
-      <div class="span9">
+      <div class="col-md-9">
         <!-- Contents
         ================================================== -->
         <section id="contents">

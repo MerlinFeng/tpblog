@@ -22,4 +22,11 @@ class ChannelModel extends Model{
 		return list_to_tree($list, 'id', 'pid', '_');
 	}
 
+	public function getChild($id)
+	{
+		$map = array('id' => $id);
+		$childs = $this->field(true)->where($map)->select();
+		return $childs;
+	}
+
 }

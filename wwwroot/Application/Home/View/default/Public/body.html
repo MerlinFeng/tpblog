@@ -4,7 +4,7 @@
         <block name="side">
         <!-- 左侧 nav
         ================================================== -->
-            <div class="span3 bs-docs-sidebar">
+            <div class="col-md-3 bs-docs-sidebar">
                 <block name="publish"></block>
                 <ul class="nav nav-list bs-docs-sidenav">
                     {:W('Category/lists', array($category['id'], ACTION_NAME == 'index'))}
@@ -15,6 +15,75 @@
     </div>
 </div>
 
+<div aria-hidden="false" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="loreg" class="modal fade in tpnone" style="padding-right: 21px;">
+    <div class="modal-dialog">
+        <div class="modal-content bg-white">
+            <div class="modal-header">
+                <button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+                <h4 id="myModalLabel" class="modal-title">注册</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row" style="margin-left:0px">
+
+                    <form id="registerform" method="post" class="col-lg-6">
+                        <div class="input-group text-center w100"> <h4>注册</h4></div>
+                        <div class="input-group">
+<span class="input-group-addon green">
+<i class="fa fa-envelope-o"></i>
+</span>
+                            <input id="email" type="text" placeholder="请输入邮箱" class="form-control" name="email">
+                        </div>
+                        <div class="input-group top10">
+<span class="input-group-addon green">
+<i class="fa fa-user"></i>
+</span>
+                            <input id="username" type="text" placeholder="请输入名字" class="form-control" datatype="*1-16" value="" name="username">
+                        </div>
+                        <div class="input-group top20">
+<span class="input-group-addon green">
+<i class="fa fa-unlock-alt"></i>
+</span>
+                            <input type="password" id="pw" placeholder="请输入密码" class="form-control" name="password">
+                        </div>
+                        <div class="input-group top10">
+<span id="pwd" class="input-group-addon green">
+<i class="fa fa-unlock-alt"></i>
+</span>
+                            <input type="password" id="pw2" placeholder="请再次输入密码" class="form-control" name="repassword">
+                        </div>
+                        <div id="tiptxt2" class="top10"></div>
+<span class="input-group top20 w100">
+<a id="registerbtn" class="btn btn-box green">注册</a>
+</span>
+                    </form>
+
+                    <form id="loginform" method="post" class="col-lg-6" style="margin-top:3em">
+                        <div class="input-group w100 text-center"> <h4>登录</h4></div>
+                        <div class="input-group">
+<span class="input-group-addon blue">
+<i class="fa fa-envelope-o"></i>
+</span>
+                            <input id="emailbox" type="text" placeholder="输入邮箱" name="username" class="form-control">
+                        </div>
+                        <div class="input-group top10">
+<span class="input-group-addon blue">
+<i class="fa fa-unlock-alt"></i>
+</span>
+                            <input name="password" type="password" id="pwbox" placeholder="输入密码" class="form-control">
+                        </div>
+                        <div id="tiptxt" class="top10"></div>
+<span class="input-group top20 w100">
+<a id="loginbtn" class="btn btn-box blue">确定</a>
+</span>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
 <script type="text/javascript">
     $(function(){
         $(window).resize(function(){
@@ -23,6 +92,9 @@
 
         $(".nav-collapse ul.tpnav li").click(function(){
             $this.addClass('tpActive').siblings().removeClass('tpActive');
+        })
+        $("#loginbtn").click(function(){
+            $name =
         })
     })
 

@@ -1,53 +1,73 @@
 <!-- 导航条
 ================================================== -->
-<div class="navbar navbar-inverse navbar-fixed-top">
+<nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="navbar-inner">
         <div class="container">
-            <a class="brand" href="{:U('index/index')}">MerlinBlog</a>
-            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <div class="nav-collapse collapse">
-                <ul class="nav tpnav">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="{:U('index/index')}">MerlinBlog</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav tpnav">
                     <think:nav name="nav" tree='true'>
-                    	<eq name="nav.pid" value="0">
-                        <li>
-                            <a href="{$nav.url|get_nav_url}" target="<eq name='nav.target' value='1'>_blank<else/>_self</eq>">{$nav.title}</a>
-                            <ul class="childnav tpnone" style="left:{$nav.sort|get_nav_left_distace}">
-                                <volist name="nav['_']" id="na">
-                                 <li><a href="{$na.url|get_nav_url}">{$na.title}</a></li>
-                                </volist>
-                            </ul>
-                        </li>
+                        <eq name="nav.pid" value="0">
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                                   aria-expanded="false" href="{$nav.url|get_nav_url}"
+                                   target="<eq name='nav.target' value='1'>_blank<else/>_self</eq>">{$nav.title}
+                                    <if condition="$nav.title neq '首页' && $nav.title neq '关于我'">
+                                        <span class="caret"></span>
+                                    </if>
+
+                                </a>
+                                <if condition="$nav.title neq '首页' && $nav.title neq '关于我'">
+                                    <ul class="dropdown-menu">
+                                        <volist name="nav['_']" id="na">
+                                            <li><a href="{$na.url|get_nav_url}">{$na.title}</a></li>
+                                        </volist>
+                                    </ul>
+                                </if>
+                            </li>
                         </eq>
                     </think:nav>
                 </ul>
-            </div>
-            <div class="nav-collapse collapse pull-right">
-                <if condition="is_login()">
-                    <ul class="nav" style="margin-right:0">
+                <ul class="nav navbar-nav navbar-right" style="margin-right:0">
+                    <if condition="is_login()">
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="padding-left:0;padding-right:0">{:get_username()} <b class="caret"></b></a>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                               style="padding-left:0;padding-right:0">{:get_username()} <b class="caret"></b></a>
                             <ul class="dropdown-menu">
-                                <li><a href="{:U('User/profile')}">修改密码</a></li>
+                                <!--<li><a href="{:U('User/profile')}">修改密码</a></li>-->
                                 <li><a href="{:U('User/logout')}">退出</a></li>
                             </ul>
                         </li>
-                    </ul>
-                <else/>
-                    <ul class="nav" style="margin-right:0">
+                        <else/>
                         <li>
-                            <a href="{:U('User/login')}" >登录</a>
+                            <a class="cursor" data-toggle="modal" data-target="#loreg">登录</a>
                         </li>
                         <li>
-                            <a href="{:U('User/register')}"  style="padding-left:0;padding-right:0">注册</a>
+                            <a class="cursor" data-toggle="modal" data-target="#loreg"
+                               style="padding-left:0;padding-right:0">注册</a>
                         </li>
-                    </ul>
-                </if>
+                    </if>
+                </ul>
             </div>
         </div>
     </div>
-</div>
+
+
+</nav>
+
+
+
+
+
+
 

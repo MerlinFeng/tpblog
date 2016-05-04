@@ -1,4 +1,4 @@
-.navbar .nav-collapse.collapse ul.tpnav>li{
+ul.tpnav>li{
     border-right: 2px solid #fff;
     padding:0 25px;
 }
@@ -167,7 +167,7 @@ form .ke-container{
 
 .bs-docs-sidenav > li > a.btn {
     display: block;
-    width: 190px \9;
+    width: 190px;
     margin: 0 0 -1px;
     padding: 11px 14px;
     border: 1px solid #e5e5e5;
@@ -178,22 +178,22 @@ form .ke-container{
   white-space: nowrap;
 }
 
+/******************导航start***********************/
 ul.childnav{
     position: absolute;
     width:100px;
-    top:40px;
+    top:52px;
     background: rgba(0,255,0,0.2);
     z-index: 999;
 }
 ul.childnav>li{
     clear:both;
-    text-align:center;
     line-height:20px;
     font-size:14px;
     list-style:none;
 }
  ul.childnav>li>a{
-    color:#fff;
+    color:dodgerblue;
  }
 
  .tpblock{
@@ -202,3 +202,105 @@ ul.childnav>li{
 .tpnone{
     display: none;
 }
+.banner {
+    background-color: #17181c;
+    background-position: center 0;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 100%;
+    z-index: 1;
+}
+.soso {
+    width: 506px;
+    height: 34px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+    top: 7em;
+}
+
+
+.mark {
+    background-color: rgba(0,0,0,0);
+    font-size: 1.5em;
+    text-align: center;
+    color: #fff;
+}
+
+.mark_info {
+    color: #fff;
+    float: right;
+}
+
+.bantxt {
+    background-color: rgba(255,255,255,0.4);
+    border: 1px solid rgba(255,255,255,0.9);
+    border-radius: 6px;
+    color: #fff;
+    height: 34px;
+    outline: medium none;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 504px;
+    position: absolute;
+}
+.banbutt {
+    position: absolute;
+    right: 0px;
+    background-color: transparent;
+    border-width: 0px;
+    outline: none;
+    color: #ddd;
+}
+.banbutt:hover{
+    color:#fff;
+}
+/*============*/
+canvas{
+    display:block;
+    vertical-align:bottom;
+}
+
+/* ---- particles.js container ---- */
+
+#particles{
+    padding-left: 0;
+    padding-right: 0;
+    margin-top:12px;
+}
+
+.navbar-inverse .navbar-inner{
+    border-bottom: 1px #666 solid;
+}
+
+/******************导航end***********************/
+
+
+/******************登录注册start***********************/
+.green {
+    background-color: #7cbc27;
+    color: #fff;
+}
+.blue {
+    background-color: #367dff;
+    color: #fff;
+}
+.cursor{
+    cursor:pointer;
+}
+.w100 {
+    width: 100%;
+}
+.top20 {
+    margin-top: 20px;
+}
+.top10 {
+    margin-top: 10px;
+}
+.bg-white {
+    background-color: #fff;
+}
+
+
+/******************登录注册end***********************/

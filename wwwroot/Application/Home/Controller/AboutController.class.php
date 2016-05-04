@@ -11,7 +11,6 @@ namespace Home\Controller;
 class AboutController extends HomeController
 {
     public function index(){
-        dd(444);
-        $this->display('About:index');
+        $this->display();
     }
 }

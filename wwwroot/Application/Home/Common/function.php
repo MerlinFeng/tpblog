@@ -10,7 +10,7 @@
  * 检测验证码
  * @param  integer $id 验证码ID
  * @return boolean     检测结果
- * @author 麦当苗儿 <zuojiazi@vip.qq.com>
+ *
  */
 function check_verify($code, $id = 1){
 	$verify = new \Think\Verify();
@@ -21,7 +21,7 @@ function check_verify($code, $id = 1){
  * 获取列表总行数
  * @param  string  $category 分类ID
  * @param  integer $status   数据状态
- * @author 麦当苗儿 <zuojiazi@vip.qq.com>
+ *
  */
 function get_list_count($category, $status = 1){
     static $count;
@@ -35,7 +35,7 @@ function get_list_count($category, $status = 1){
  * 获取段落总数
  * @param  string $id 文档ID
  * @return integer    段落总数
- * @author 麦当苗儿 <zuojiazi@vip.qq.com>
+ *
  */
 function get_part_count($id){
     static $count;
@@ -49,7 +49,7 @@ function get_part_count($id){
  * 获取导航URL
  * @param  string $url 导航URL
  * @return string      解析或的url
- * @author 麦当苗儿 <zuojiazi@vip.qq.com>
+ *
  */
 function get_nav_url($url){
     switch ($url) {
@@ -63,16 +63,18 @@ function get_nav_url($url){
     return $url;
 }
 
-function get_nav_left_distace($i){
-    switch ($i){
-        case 2:
-            return '99px';
-            break;
-        case 3:
-            return '234px';
-            break;
-        case 4:
-            return '365px';
-        break;
+function is_has_child_nav($id)
+{
+    $child = D('Channel')->getChild($id);
+    if($child)
+    {
+        return true;
     }
+    else
+    {
+        return false;
+    }
+
+
 }
+
