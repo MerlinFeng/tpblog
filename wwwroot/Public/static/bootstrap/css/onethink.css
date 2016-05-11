@@ -1,6 +1,5 @@
 ul.tpnav>li{
-    border-right: 2px solid #fff;
-    padding:0 25px;
+    padding:0 0px;
 }
 .navbar-inverse .brand, .navbar-inverse .nav > li > a{
     color:#fff;
@@ -21,9 +20,13 @@ ul.tpnav>li{
 }
 
 .tpnav .tpActive{
-    background: green;
+    background:#d43f3a;
+;
 }
 
+.nav.nav-list.bs-docs-sidenav>.active{
+    background:#D9551A;
+}
 .onethink.pagination {
   margin: 20px 0;
 }
