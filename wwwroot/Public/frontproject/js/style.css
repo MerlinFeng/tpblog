@@ -1,0 +1,22 @@
+body{background: url(img/b.jpg) no-repeat;background-size: 100%;}
+		*{margin: 0;padding: 0;}
+		#wrap{width: 300px;height: 250px;background: #abcdef;border-radius: 20px;margin-left: 10px;padding: 35px 0;}
+		
+		#wrap #start{width: 100px;height: 30px;margin: 5px auto;text-align: center;line-height:30px;padding: 5px 0 0 0;font-size: 30px;color:green;cursor: pointer;}
+		#wrap #name{width: 200px;height: 35px;margin: 20px auto;font-size: 20px;text-align: center;line-height: 35px;color:#fff;cursor: pointer;}
+		#wrap #info{width:200px;height: 133px;border: 1px solid #abcdef;margin: 0 auto;position: relative;}
+		#wrap #info1,#info2,#info3,#info4{width: 50px;height: 50px;border: 1px solid red;border-radius: 50%;text-align: center;line-height: 50px;cursor: pointer;display: none;}
+		#wrap #info1{position: absolute;left:15px;top:0;}
+		#wrap #info2{position: absolute;left:132px;top:0;}
+		#wrap #info3{position: absolute;left:15px;top:82px;}
+		#wrap #info4{position: absolute;left:132px;top:82px;}
+		#wrap #pic{width: 90px;height: 90px;border: 1px solid green;border-radius: 50%;margin: 22px auto;display: block;cursor: pointer;}
+		/*big*/
+		#big{width: 500px;height: 421px;/*border: 1px solid red;*/position: relative;}
+		#big ul{list-style: none;display: none;}
+		#big #ms1 li{float: left;margin-left: 2px;}
+		#big  img{width:97px;height: 50px; }
+		#big #ms3 li{float: left;margin-left: 2px;}
+		#big #ms4{position: absolute;left: 400px;top: 55px;}
+		.lhMove{border: 1px solid #fff;}
+		#inf

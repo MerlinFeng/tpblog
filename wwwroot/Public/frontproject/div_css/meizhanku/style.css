@@ -1,0 +1,69 @@
+*{margin: 0;padding: 0;}
+
+#header{width: 100%;height:100px;background: #22272D;position: relative;}
+#header .logo{width: 291px;height: 42px;background:url(images/logo.png);line-height: 100px;float: left;position: absolute;left: 243px;top: 30px;}
+#header .banner{color: #CCCCCC;width: 90px;height: 17px;font-size: 15px;line-height: 17px;text-align: center;float: left;position: absolute;left: 420px;top: 75px;}
+#header .search{width: 300px;height: 30px;float: left;position: absolute;left: 855px;top: 31px;}
+#header .search form input:nth-child(1){width: 193px;height:26px;background: #161B1F;border: 1px solid #000;}
+#header .search form input:nth-child(1):focus{color: #fff;}
+#header .search form input:nth-child(2){width: 79px;height: 26px;background-image:linear-gradient(to bottom,#F2F2F2,#CFCFCF);}
+/*#header .search form input:nth-child(2):focus{border: 1px solid #fff;}*/
+#banner{width: 100%;height: 40px;border-bottom: 1px solid #000;background-image:linear-gradient(to bottom,#FDFFFC,#DDDEE0);padding-top: 10px;}
+#banner ul{list-style: none;margin-left: 257px;}
+#banner ul li{font-size: 12px;font-weight: bolder;line-height: 25px;width: 80px;height: 25px;float: left;text-align: center;margin-left: 20px;}
+#banner ul li:hover{background: #22272D;border-radius: 10%;color: #fff;}
+
+#container{width: 100%;height: 1099px;background-image: linear-gradient(to bottom,#D8EAF6,#fff,#D8EAF6);}
+#container .bigBg{width: 100%;height: 300px;background: url(images/runplay_bg.jpg);position: relative;border-bottom: 1px solid #00335A;}
+#container .bigBg .smallBg{width: 300px;height: 150px;background: url(images/img1.jpg);position: absolute;left:215px;top: 54px; }
+#container .bigBg .info{width: 280px;height: 130px;position: absolute;left: 594px;top: 53px;}
+#container .bigBg .info p{color: #fff;}
+#container .bigBg .info p:nth-child(1){font-size: 25px;margin-bottom: 23px;}
+#container .bigBg .info p:nth-child(2){margin-bottom: 21px;}
+.btn{width: 103px;height: 27px;background: url(images/default.png);text-align: center;line-height: 27px;color: #fff;font-size: 14px;font-weight: bolder;}
+.btn a{color: #fff;text-decoration: none;}
+.btn:hover{background: url(images/d_hover.png);text-decoration: underline;}
+#container .details{width: 80%;height: 630px;margin-left: 210px;}
+#container .details .left{width:600px;height: 100%;float: left;}
+#container .details .left .one{width:314px;height: 67px; margin-top: 10px;margin-bottom: 20px;}
+
+
+.font{font-size: 25px;}
+.one p a{text-decoration: none;}
+.one p{line-height: 2;}
+.one p:nth-child(2){color: #555555;font-size: 12px;}
+.one p a:hover{text-decoration: underline;color: blue;}
+.btn_bottom{margin-top: -16px;width: 103px;height: 27px;background: url(images/default.png);text-align: center;line-height: 27px;color: #fff;font-size: 14px;font-weight: bolder;}
+.btn_bottom a{color: #fff;text-decoration: none;}
+.btn_bottom:hover{background: url(images/d_hover.png);text-decoration: underline;}
+
+#container .details .left ul{list-style: none;width: 613px;height: 100%;margin-top: 25px;}
+#container .details .left ul li{width: 284px;height: 183px;background: #F1F2EA;float: left;border: 1px solid #D5D7CA;margin-bottom: 20px;}
+#container .details .left ul li p{margin-left: 7px;font-weight: bolder;margin-top: 10px;}
+#container .details .left ul li a{display: inline-block;margin-left: 7px;margin-top: 5px;}
+.ml{margin-left: 28px;}
+#container .details .right{width:243px;height: 100%;float: left; margin-left: 87px;}
+#container .details .right ul{list-style: none;}
+#container .details .right ul li{width: 224px;height: 100px;border-bottom: 1px dashed #CCCCCC;}
+#container .details .right ul li a:hover{color: green;}
+#container .details .right ul li a{font-size: 12px;color: #2F74C5;}
+#container .details .right ul li p{font-size: 12px;color: #B58555;margin-top: 10px;}
+#container .details .right .tuWen{width: 100%;height: 100px;}
+#container .details .right .tuWen div{width: 101px;height: 53px;display: inline-block;}
+
+#container .details .right .tuWen p:nth-child(1){font-size: 25px;}
+#container .details .right .tuWen img{display: inline-block;margin-left: 70px;}
+
+
+#footer{width: 100%;height: 100px;background: #015591;border-top:2px solid #002641;position: relative;}
+#footer ul{list-style: none;width:80%;height: 80%;margin: 10px auto;position: relative;}
+#footer ul li{float: left;color: #fff;text-align: center;line-height: 30px;margin-left:20px;position: relative;left:429px;top: 15px;}
+#footer ul li a{text-decoration: none;color: #fff;font-size: 14px;text-decoration: underline;}
+#footer p{width: 200px;height: 20px;text-align: center;position: absolute;left: 585px;top: 59px;}
+#footer p a{text-decoration: none;color: #fff;font-size: 14px;}
+
+.link{text-decoration: none;color:#000000;}
+.link:hover{color: #fff;}
+
+/*响应式*/
+

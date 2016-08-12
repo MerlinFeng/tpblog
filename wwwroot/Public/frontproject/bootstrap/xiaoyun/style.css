@@ -1,0 +1,92 @@
+.navbar-default{background: none;border: none;}
+		.navbar.navbar-default{padding-bottom: 20px;}
+		.navbar-nav > li > a {padding-top: 30px;margin-left: 28px;}
+		.navbar-default .navbar-nav>.active>a{background:none;color: red;}
+		.navbar-default .navbar-nav>.active>a:hover{background: none;color: red;}
+		.nav.navbar-nav>li>a:hover{color: red;}
+		.navbar-right .btn.btn-default{border-radius: 20px;}
+		.navbar-right .btn.btn-default:hover{background: red;color: #fff;}
+		.row{width: 100%;margin-right: 0px;margin-left: -4px;}
+		.row.two{width: 100%;height: 215px; margin-top: 50px;}
+		@media screen and (max-width:640px ) {
+			.row p:nth-child(1){font-size: 20px;}
+			.row p:nth-child(2){font-size: 15px;}
+		}
+		@media screen and (min-width:640px ) and (max-width: 960px){
+			.row p:nth-child(1){font-size: 30px;}
+			.row p:nth-child(2){font-size: 25px;}
+		}
+		@media screen and (min-width:960px ) {
+			.row p:nth-child(1){font-size: 46px;}
+			.row p:nth-child(2){font-size: 23px;}
+		}
+		.row.four{text-align: center;margin-top: 50px;}
+		.row p{text-align: left;}
+		.row .btn.btn-default{border-radius: 40px;padding-top: 10px;border: 1px solid red;}
+		.row .btn.btn-default:hover{background: red;color: #fff;}
+		.row.five{text-align: center;margin-top: 50px;}
+		.row.six{text-align: center;margin-top: 50px;}
+		.row.seven{margin-top: 50px;}
+		.row.eight{text-align: center;margin-top: 50px;}
+		.row.ten{text-align: center;margin-top: 50px;}
+		.row.two p{text-align: center;}
+		.js{height: 470px;width: 100%;background: #F1F0ED;margin-top: 50px;}
+		.carousel-control{font-size: 60px;display: inline-block;margin-top: 140px;}
+		.carousel-inner table tr td{width: 120px;height: 60px;margin-left: 10px;margin-bottom: 10px;}
+		table {background-color: transparent;margin: 50px auto;width: 873px;height: 252px;}
+		h3{font-size: 30px;}
+		.carousel-control.left, .carousel-control.right{background: none;}
+		.an_lr {
+		  background: url(images/lr.png) no-repeat;
+		  width: 30px;
+		  height: 50px;
+		  left: 25px;
+		  position: absolute;
+		  top: 43%;
+		  z-index: 5;
+		  display: inline-block;
+		  margin-top: -10px;
+		  background-size: 80%;
+		}
+		.an_ll {
+		  background: url(images/ll.png) no-repeat;
+		  width: 30px;
+		  height: 50px;
+		  position: absolute;
+		  top: 43%;
+		  z-index: 5;
+		  display: inline-block;
+		  margin-top: -10px;
+		  background-size: 80%;
+		}
+		@media  screen and (max-width: 640px) {
+			.row.nine{display: none;}
+		}
+		ul{list-style: none;}
+		.ul ul a {
+		  font-size: 12px;
+		  line-height: 24px;
+		  color: #38485a;
+		}
+	    .one{float: left;}
+	    .two{float: left;}
+	    h5{color: #49586A;font-weight: 800;}
+	    .row.eleven{text-align: center;}
+	    .row.eleven .img{width: 35px;height: 35px;background-color: #C8C9CA;}
+	    .row ul li a:hover{color: red;text-decoration: none;}
+    	.row.twelve{width: 100%;height: 120px;margin-top: 50px;}
+    	.row.twelve p{color: #38485a;font-size: 10px;width:85%;height: 42px;float: left;}
+    	.row.twelve p span a{text-decoration: none;color:#38485a;}
+    	.row.twelve p span a:hover{color: red;}
+    	.row.twelve .tubiao{width: 169px;height: 26px;float: right;}
+    	.row.twelve .tubiao div{width: 26px;height: 26px;margin-left: 5px;float: left;}
+		.row.twelve .tubiao div:hover{cursor: pointer;}
+		.row.twelve .tubiao div:nth-child(1){background: url(images/icon_04.png);background-size:52px 110px;background-position: 26px 1px;}
+		.row.twelve .tubiao div:nth-child(1):hover{background-position: 1px 1px;}
+		.row.twelve .tubiao div:nth-child(2){background: url(images/icon_04.png);background-size:52px 110px;background-position: 26px -28px;}
+		.row.twelve .tubiao div:nth-child(2):hover{background-position: 1px -28px;}
+		.row.twelve .tubiao div:nth-child(3){background: url(images/icon_04.png);background-size:52px 110px;background-position: 26px 54px;}
+		.row.twelve .tubiao div:nth-child(3):hover{background-position: 1px 54px;}
+		.row.twelve .tubiao div:nth-child(4){background: url(images/icon_04.png);background-size:52px 110px;background-position: 26px 246px;}
+		.row.twelve .tubiao div:nth-child(4):hover{  background-position: 0px 246px;}
+		@media screen and (max-width: 640px){.row.twelve p{font-size: 15px;text-align: center;}.row.twelve .tubiao{margin: 40px auto;}}
